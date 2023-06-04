@@ -75,11 +75,11 @@ function AddCafeForm() {
           <label>Location:</label>
           <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
         </div>
-  
-        <button className="delete-button" type="submit">Submit</button>
-        <button className="delete-button" type="button" onClick={handleCancel}>
-          Cancel
-        </button>
+
+        <div className="button-container">
+        <button type="submit">Submit</button>
+        <button onClick={handleCancel}>Cancel</button>
+        </div>
       </form>
     </div>
   );
